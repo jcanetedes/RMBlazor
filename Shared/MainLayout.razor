@@ -41,7 +41,7 @@
     <RadzenBody Expanded="@sidebarExpanded">
         <RadzenRow class="rz-mx-auto rz-px-4 rz-pt-2 rz-pt-md-4 rz-pt-lg-6 rz-pt-xl-12 rz-pb-2 rz-pb-lg-12" Style="max-width: 1440px;">
             <RadzenColumn Size="12">
-            @Body
+                @Body
             </RadzenColumn>
         </RadzenRow>
     </RadzenBody>
@@ -53,10 +53,10 @@
         <RadzenPanelMenu>
             <AuthorizeView>
                 <Authorized>
-                    <RadzenPanelMenuItem Text="Dashboard" Path="" Icon="dashboard" />
-                    <RadzenPanelMenuItem Text="Vacancies" Path="" Icon="work" />
-                    <RadzenPanelMenuItem Text="Candidates" Path="" Icon="people" />
-                    <RadzenPanelMenuItem Text="Settings" Path="" Icon="settings" />
+                    <RadzenPanelMenuItem Text="Dashboard" Path="/Dashboard" Icon="dashboard" />
+                    <RadzenPanelMenuItem Text="Vacancies" Path="/Vacancies" Icon="work" />
+                    <RadzenPanelMenuItem Text="Candidates" Path="/Candidates" Icon="people" />
+                    <RadzenPanelMenuItem Text="Settings" Path="/Settings" Icon="settings" />
                 </Authorized>
                 <NotAuthorized>
                     <RadzenPanelMenuItem Text="Login" Path="/Identity/Account/Login" Icon="login" />
